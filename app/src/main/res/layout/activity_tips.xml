@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:baselineAligned="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/BackGroundImageView"
+        android:id="@+id/image"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true">
+
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/spotify" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_playlist"
+        android:id="@+id/playlist"
+        android:onClick="startPlaylist"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:background="@drawable/player_background"
+        android:layout_margin="10dp"
+      >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/before"
+            android:layout_weight="1"
+            android:id="@+id/before"
+            android:clickable="true"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/stop"
+            android:layout_weight="1"
+            android:id="@+id/stop"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/next"
+            android:layout_weight="1"
+            android:id="@+id/next"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:text="@string/diet"
+        android:onClick="dietOnClick"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPrimary"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:menu="@menu/navigation"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

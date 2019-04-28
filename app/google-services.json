@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "593928259273",
+    "firebase_url": "https://workout-cce4a.firebaseio.com",
+    "project_id": "workout-cce4a",
+    "storage_bucket": "workout-cce4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593928259273:android:89154973962a209f",
+        "android_client_info": {
+          "package_name": "com.customizedworkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593928259273-fvvf9603dgpjg9o0cfetbb6s46rftj0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.customizedworkout",
+            "certificate_hash": "d13cfd10f104246309f2fc1a858d4d310e03f1a6"
+          }
+        },
+        {
+          "client_id": "593928259273-e0g5kf3htvgivjsm7sfc08qr2ngl1ad7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqIwCJJkzukofz3nzvMwM18Z3C2WiJ0Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593928259273-e0g5kf3htvgivjsm7sfc08qr2ngl1ad7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
