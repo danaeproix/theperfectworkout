@@ -22,7 +22,7 @@ public class TipsActivity extends AppCompatActivity {
     BottomNavigationView navigationView;
     private static final String CLIENT_ID = "c3b41d78f33c4f2f89b226b37b660f08";
     private static final String REDIRECT_URI = "my-customized-workout://callback";
-    private SpotifyAppRemote mSpotifyAppRemote;
+    private SpotifyAppRemote mSpotifyAppRemote = null;
     String html;
     Button diet;
 
@@ -104,9 +104,10 @@ public class TipsActivity extends AppCompatActivity {
     }
 
     public void startPlaylist(View v){
-        if(mSpotifyAppRemote.isConnected()) {
-            mSpotifyAppRemote.getPlayerApi().play("spotify:user:21jj7duf2yr4itggkwfnmuiwa:playlist:4JsCksWkgYBCTad3PY03RB");
-        }
+       if(mSpotifyAppRemote !=  null) {
+           mSpotifyAppRemote.getPlayerApi().play("spotify:user:21jj7duf2yr4itggkwfnmuiwa:playlist:4JsCksWkgYBCTad3PY03RB");
+       }
+
     }
 
     private void connected() {

@@ -76,7 +76,7 @@ public class ExerciceActivity extends AppCompatActivity {
         if(bundle != null && bundle.containsKey("name")) {
 
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-           // prefs.edit().clear().commit();
+           //prefs.edit().clear().commit();
             boolean addPrefs = true;
             for (int i = 0; i < prefs.getAll().size()/3; i++){
                 if(prefs.getString("name" + i, "").equals(bundle.getString("name"))){

@@ -62,7 +62,7 @@ class MyWorkoutAdapter extends RecyclerView.Adapter<MyWorkoutAdapter.ViewHolder>
                         prefs.edit().remove("name" + i).apply();
                         prefs.edit().remove("id" + i).apply();
                         prefs.edit().remove("iconId" + i).apply();
-                        Toast.makeText(context, workoutLists.get(position).getName() + " have been removed of your workout", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, workoutLists.get(position).getName() + " has been removed of your workout", Toast.LENGTH_SHORT).show();
 
                         //context.startActivity(context.getIntent());
                         /*this.getClass().finish();
